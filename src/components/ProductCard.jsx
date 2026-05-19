@@ -11,29 +11,24 @@ export default function ProductCard({ product, onAdd, inCart, justAdded }) {
 
   return (
     <div className="product-card bg-white border border-gray-100 rounded-2xl p-6 flex flex-col shadow-sm relative">
-      {/* Tag badge */}
       <span
         className={`absolute top-4 right-4 text-[11px] font-bold px-2.5 py-1 rounded-full ${tagClass}`}
       >
         {product.tag}
       </span>
 
-      {/* Icon */}
       <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-4xl mb-4 flex-shrink-0">
         {product.icon}
       </div>
 
-      {/* Name */}
       <h3 className="font-bold text-gray-900 text-[17px] mb-2 pr-16 leading-snug">
         {product.name}
       </h3>
 
-      {/* Description */}
       <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-1">
         {product.description}
       </p>
 
-      {/* Price */}
       <div className="mb-4">
         <span className="text-2xl font-extrabold text-gray-900">${product.price}</span>
         <span className="text-gray-400 text-sm ml-0.5">
@@ -41,7 +36,6 @@ export default function ProductCard({ product, onAdd, inCart, justAdded }) {
         </span>
       </div>
 
-      {/* Features */}
       <ul className="space-y-2 mb-5">
         {product.features.map((f) => (
           <li key={f} className="flex items-center gap-2 text-sm text-gray-600">
@@ -53,7 +47,6 @@ export default function ProductCard({ product, onAdd, inCart, justAdded }) {
         ))}
       </ul>
 
-      {/* Buy button */}
       <button
         onClick={() => onAdd(product)}
         disabled={inCart}

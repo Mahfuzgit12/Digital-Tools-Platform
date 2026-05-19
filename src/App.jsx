@@ -20,11 +20,9 @@ export default function App() {
 
   const sectionRef = useRef(null);
 
-  /* ─── helpers ─── */
   const scrollToSection = () =>
     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
 
-  /* ─── cart actions ─── */
   const addToCart = useCallback(
     (product) => {
       if (cart.find((p) => p.id === product.id)) {
@@ -33,7 +31,6 @@ export default function App() {
       }
       setCart((prev) => [...prev, product]);
 
-      // "just added" flash for button
       setJustAdded((prev) => new Set([...prev, product.id]));
       setTimeout(() => {
         setJustAdded((prev) => {
@@ -65,7 +62,6 @@ export default function App() {
     );
   }, [cart]);
 
-  /* ─── nav cart click ─── */
   const handleCartNavClick = () => {
     setActiveTab("cart");
     scrollToSection();
@@ -73,7 +69,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* React-Toastify */}
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -89,9 +84,7 @@ export default function App() {
       <Hero onExplore={scrollToSection} />
       <Stats />
 
-      {/* ─── Products / Cart toggle section ─── */}
       <section ref={sectionRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Section header */}
         <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
             Premium Digital Tools
@@ -101,7 +94,6 @@ export default function App() {
             to boost your productivity and creativity.
           </p>
 
-          {/* Toggle pill */}
           <div className="inline-flex bg-gray-100 rounded-full p-1 mt-7 gap-1">
             {["products", "cart"].map((tab) => (
               <button
@@ -119,7 +111,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Products grid */}
         {activeTab === "products" && (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {products.map((product) => (
@@ -134,7 +125,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Cart view */}
         {activeTab === "cart" && (
           <Cart
             cart={cart}

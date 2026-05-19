@@ -24,9 +24,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-400 pt-14 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-600 to-violet-400 flex items-center justify-center">
@@ -37,7 +35,6 @@ export default function Footer() {
             <p className="text-sm leading-relaxed max-w-[200px] mb-5">
               Your one-stop platform for premium digital tools and productivity software.
             </p>
-            {/* Social icons */}
             <div className="flex gap-2">
               {SOCIALS.map((s) => (
                 <a
@@ -52,7 +49,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link columns */}
           {FOOTER_LINKS.map((col) => (
             <div key={col.title}>
               <h4 className="text-white font-bold text-sm mb-4">{col.title}</h4>
@@ -72,7 +68,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom bar */}
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs">© 2025 DigiTools. All rights reserved.</p>
           <div className="flex gap-5">

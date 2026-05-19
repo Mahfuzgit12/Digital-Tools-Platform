@@ -1,7 +1,6 @@
 export default function CTABanner() {
   return (
     <section className="relative bg-gradient-to-br from-violet-800 via-violet-600 to-violet-500 py-20 overflow-hidden">
-      {/* Decorative blobs */}
       <div className="absolute top-[-60px] right-[-60px] w-64 h-64 bg-white/5 rounded-full pointer-events-none" />
       <div className="absolute bottom-[-80px] left-[-40px] w-72 h-72 bg-white/5 rounded-full pointer-events-none" />
 

@@ -5,9 +5,7 @@ export default function Hero({ onExplore }) {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-        {/* Left */}
         <div className="animate-fade-in-up max-w-[540px]">
-          {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-violet-50 border border-violet-200 text-violet-700 text-xs font-semibold px-4 py-1.5 rounded-full mb-7">
             <span className="pulse-dot w-2 h-2 bg-violet-500 rounded-full inline-block" />
             New: AI-powered productivity tools
@@ -46,7 +44,6 @@ export default function Hero({ onExplore }) {
           </div>
         </div>
 
-        {/* Right – banner image */}
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-xl mx-auto md:mx-0">
             <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-violet-50 via-violet-100 to-indigo-100 shadow-[0_40px_80px_rgba(109,40,217,0.12)]" />

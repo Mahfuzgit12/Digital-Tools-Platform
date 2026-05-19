@@ -50,7 +50,6 @@ export default function Pricing() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
             Simple, Transparent Pricing
@@ -60,7 +59,6 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Cards */}
         <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
           {PLANS.map((plan) => (
             <div

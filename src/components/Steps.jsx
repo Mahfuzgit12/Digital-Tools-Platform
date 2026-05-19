@@ -23,7 +23,6 @@ export default function Steps() {
   return (
     <section className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
             Get Started in 3 Steps
@@ -33,16 +32,13 @@ export default function Steps() {
           </p>
         </div>
 
-        {/* Steps */}
         <div className="grid sm:grid-cols-3 gap-10">
           {STEPS.map((step, i) => (
             <div key={step.num} className="relative text-center">
-              {/* Connector line */}
               {i < STEPS.length - 1 && (
                 <div className="hidden sm:block absolute top-7 left-[calc(50%+44px)] right-[calc(-50%+44px)] h-0.5 bg-gradient-to-r from-violet-300 to-violet-100" />
               )}
 
-              {/* Step number */}
               <div className="w-14 h-14 bg-gradient-to-br from-violet-600 to-violet-400 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-violet-200 relative z-10">
                 <span className="text-white font-extrabold text-lg">{step.num}</span>
               </div>
