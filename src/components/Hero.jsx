@@ -6,7 +6,7 @@ export default function Hero({ onExplore }) {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left */}
-        <div className="animate-fade-in-up max-w-[520px]">
+        <div className="animate-fade-in-up max-w-[540px]">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-violet-50 border border-violet-200 text-violet-700 text-xs font-semibold px-4 py-1.5 rounded-full mb-7">
             <span className="pulse-dot w-2 h-2 bg-violet-500 rounded-full inline-block" />
@@ -20,26 +20,26 @@ export default function Hero({ onExplore }) {
             </span>
           </h1>
 
-          <p className="text-gray-500 text-lg leading-relaxed mb-8">
+          <p className="text-gray-500 text-lg leading-8 mb-8">
             Access premium AI tools, design assets, templates, and productivity
-            software—all in one place. Build smarter, launch faster, and keep your
-            creative momentum.
+            software—all in one place. Build smarter, move faster, and keep your
+            projects progressing with confidence.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <button
               onClick={onExplore}
-              className="bg-gradient-to-r from-violet-600 to-violet-500 text-white font-semibold px-7 py-3.5 rounded-full text-base hover:from-violet-700 hover:to-violet-600 transition-all duration-200 shadow-lg shadow-violet-200 hover:shadow-violet-300 hover:-translate-y-0.5 active:translate-y-0"
+              className="bg-gradient-to-r from-violet-600 to-violet-500 text-white font-semibold px-7 py-3.5 rounded-full text-base hover:from-violet-700 hover:to-violet-600 transition-all duration-200 shadow-xl shadow-violet-200/70 hover:shadow-violet-300/60 hover:-translate-y-0.5 active:translate-y-0"
             >
               Explore Products
             </button>
-            <button className="flex items-center gap-2 text-gray-700 border border-gray-200 font-semibold px-6 py-3.5 rounded-full text-base hover:border-violet-400 hover:text-violet-600 transition-all duration-200">
+            <button className="flex items-center gap-2 text-gray-700 bg-white border border-gray-200 font-semibold px-6 py-3.5 rounded-full text-base hover:border-violet-400 hover:text-violet-600 hover:bg-violet-50 transition-all duration-200 shadow-sm">
               <Play size={13} fill="currentColor" />
               Watch Demo
             </button>
           </div>
 
-          <div className="mt-6 inline-flex flex-wrap gap-3 text-sm text-gray-500">
+          <div className="mt-6 inline-flex flex-wrap gap-3 text-sm text-gray-600">
             <span className="rounded-full border border-gray-200 px-3 py-1.5 bg-white/80">Fast onboarding</span>
             <span className="rounded-full border border-gray-200 px-3 py-1.5 bg-white/80">AI-ready templates</span>
             <span className="rounded-full border border-gray-200 px-3 py-1.5 bg-white/80">Secure access</span>
