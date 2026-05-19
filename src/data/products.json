@@ -97,5 +97,71 @@
     "tagType": "bestseller",
     "features": ["Unlimited campaigns", "A/B testing", "Advanced analytics"],
     "icon": "📧"
+  },
+  {
+    "id": 10,
+    "name": "Brand Kit Essentials",
+    "description": "Create consistent brand assets with logo generators, color palettes, and typography guides.",
+    "price": 27,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Logo builder", "Color palettes", "Brand guidelines"],
+    "icon": "🧩"
+  },
+  {
+    "id": 11,
+    "name": "Collaboration Portal",
+    "description": "Work together in real time with task boards, shared assets, and team notifications.",
+    "price": 55,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["Team workspaces", "Live comments", "Shared libraries"],
+    "icon": "👥"
+  },
+  {
+    "id": 12,
+    "name": "Analytics Dashboard",
+    "description": "Monitor performance across campaigns, websites, and social channels from one central dashboard.",
+    "price": 42,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Custom reports", "Traffic insights", "Conversion tracking"],
+    "icon": "📊"
+  },
+  {
+    "id": 13,
+    "name": "Landing Page Set",
+    "description": "Launch fast landing pages with conversion-focused layouts and integrated publishing tools.",
+    "price": 22,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Drag-and-drop builder", "Mobile-ready", "SEO-friendly"],
+    "icon": "🧾"
+  },
+  {
+    "id": 14,
+    "name": "Podcast Studio",
+    "description": "Record and edit audio episodes with professional tools, music beds, and publishing workflows.",
+    "price": 31,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Multi-track recording", "Sound presets", "Direct publishing"],
+    "icon": "🎙️"
+  },
+  {
+    "id": 15,
+    "name": "Project Planner Pro",
+    "description": "Organize tasks, timelines, and milestones with smart templates for creatives and teams.",
+    "price": 18,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Ready-made templates", "Timeline views", "Progress reports"],
+    "icon": "🗂️"
   }
 ]
