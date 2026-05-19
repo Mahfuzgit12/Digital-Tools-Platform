@@ -1,4 +1,5 @@
 import { Play, Star } from "lucide-react";
+import bannerImg from "../assets/banner.png";
 
 export default function Hero({ onExplore }) {
   return (
@@ -38,30 +39,19 @@ export default function Hero({ onExplore }) {
           </div>
         </div>
 
-        {/* Right – decorative card */}
-        <div className="hidden md:block">
-          <div className="relative">
-            <div className="bg-gradient-to-br from-violet-50 via-violet-100 to-indigo-100 rounded-3xl h-80 flex items-center justify-center overflow-hidden relative">
-              {/* BG circles */}
-              <div className="absolute top-[-40px] right-[-40px] w-44 h-44 bg-violet-200/40 rounded-full" />
-              <div className="absolute bottom-[-30px] left-[-20px] w-32 h-32 bg-indigo-200/30 rounded-full" />
-
-              {/* Center */}
-              <div className="text-center z-10">
-                <div className="text-7xl mb-3">⚡</div>
-                <p className="text-violet-700 font-bold text-base tracking-tight">Premium Digital Tools</p>
-                <p className="text-violet-400 text-sm font-medium mt-1">All-in-one platform</p>
-              </div>
-
-              {/* Floating badges */}
-              <div className="absolute top-5 left-5 bg-white rounded-2xl px-3 py-2 shadow-lg flex items-center gap-2 text-xs font-semibold text-gray-700">
-                🚀 50K+ Users
-              </div>
-              <div className="absolute bottom-5 right-5 bg-white rounded-2xl px-3 py-2 shadow-lg flex items-center gap-2 text-xs font-semibold text-gray-700">
-                <Star size={12} fill="#FBBF24" color="#FBBF24" />
-                4.9 Rating
-              </div>
+        {/* Right – banner image */}
+        <div className="flex justify-center md:justify-end">
+          <div className="relative w-full max-w-xl mx-auto md:mx-0">
+            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-violet-50 via-violet-100 to-indigo-100 shadow-[0_40px_80px_rgba(109,40,217,0.12)]" />
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
+              <img
+                src={bannerImg}
+                alt="Hero banner"
+                className="w-full h-[24rem] sm:h-[28rem] md:h-[32rem] object-cover"
+              />
             </div>
+            <div className="absolute top-6 -left-8 w-28 h-28 sm:w-36 sm:h-36 bg-violet-200/40 rounded-full blur-3xl" />
+            <div className="absolute bottom-6 -right-6 w-24 h-24 sm:w-28 sm:h-28 bg-indigo-200/30 rounded-full blur-3xl" />
           </div>
         </div>
       </div>
