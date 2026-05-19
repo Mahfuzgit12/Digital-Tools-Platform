@@ -3,7 +3,9 @@ import bannerImg from "../assets/banner.png";
 
 export default function Hero({ onExplore }) {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-br from-violet-50 via-white to-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="pointer-events-none absolute -top-16 left-1/2 w-72 h-72 blur-3xl bg-violet-200/40 rounded-full -translate-x-1/2" />
+      <div className="pointer-events-none absolute -bottom-12 right-0 w-64 h-64 blur-3xl bg-indigo-200/30 rounded-full" />
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="animate-fade-in-up max-w-[540px]">
           <div className="inline-flex items-center gap-2 bg-violet-50 border border-violet-200 text-violet-700 text-xs font-semibold px-4 py-1.5 rounded-full mb-7">
@@ -27,7 +29,7 @@ export default function Hero({ onExplore }) {
           <div className="flex flex-wrap gap-4">
             <button
               onClick={onExplore}
-              className="bg-gradient-to-r from-violet-600 to-violet-500 text-white font-semibold px-7 py-3.5 rounded-full text-base hover:from-violet-700 hover:to-violet-600 transition-all duration-200 shadow-xl shadow-violet-200/70 hover:shadow-violet-300/60 hover:-translate-y-0.5 active:translate-y-0"
+              className="bg-gradient-to-r from-violet-600 to-violet-500 text-white font-semibold px-7 py-3.5 rounded-full text-base hover:from-violet-700 hover:to-violet-600 transition-all duration-200 shadow-xl shadow-violet-200/70 hover:shadow-violet-300/60 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-violet-200"
             >
               Explore Products
             </button>

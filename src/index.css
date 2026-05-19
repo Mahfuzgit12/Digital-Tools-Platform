@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background: #ffffff;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f5ff 100%);
   color: #111827;
 }
 
@@ -39,8 +39,15 @@ html { scroll-behavior: smooth; }
 .animate-bounce-slow  { animation: bounceSlow 2s ease-in-out infinite; }
 .pulse-dot            { animation: pulseDot 1.5s ease-in-out infinite; }
 
-.product-card { transition: transform 0.22s ease, box-shadow 0.22s ease; }
-.product-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(124,58,237,0.13); }
+.product-card {
+  border: 1px solid rgba(229,231,255,0.9);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 70px rgba(124,58,237,0.12);
+  border-color: rgba(167,139,250,0.5);
+}
 
 .btn-added { animation: greenFlash 0.7s ease; }
 
